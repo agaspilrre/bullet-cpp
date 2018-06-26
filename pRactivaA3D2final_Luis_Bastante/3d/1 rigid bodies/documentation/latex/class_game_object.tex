@@ -1,0 +1,145 @@
+\hypertarget{class_game_object}{}\section{Game\+Object Class Reference}
+\label{class_game_object}\index{Game\+Object@{Game\+Object}}
+
+
+{\ttfamily \#include $<$Game\+Object.\+hpp$>$}
+
+Inheritance diagram for Game\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.632653cm]{class_game_object}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_game_object_1_1_parts}{Parts}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_ab2c6683579548906dc8432bbd823fd76}{Game\+Object}} (\mbox{\hyperlink{class_scene}{Scene}} \&\mbox{\hyperlink{class_game_object_aeea61de934e13603696b4ed00e9fe42e}{scene}})
+\item 
+void \mbox{\hyperlink{class_game_object_a35111561ee0a5dcbd260ae282fbee715}{add\+Model\+And\+Physics}} (const string \&model\+\_\+obj\+\_\+path, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_rigidbody}{Rigidbody}} $>$ \&rigid\+Body, float physics\+To\+Graphics\+Scale, string name\+Part)
+\item 
+void \mbox{\hyperlink{class_game_object_ac4d09cf168b9ad3e5ba0c31fb7872c76}{add\+Joints}} (string name, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_rigidbody}{Rigidbody}} $>$ \&rgA, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_rigidbody}{Rigidbody}} $>$ \&rgB, bt\+Vector3 \&pivotA, bt\+Vector3 \&pivotB, bt\+Vector3 \&axisA, bt\+Vector3 \&axisB)
+\item 
+void \mbox{\hyperlink{class_game_object_adad7d284b670db722a2fda8e6a7997e3}{update}} ()
+\item 
+virtual void \mbox{\hyperlink{class_game_object_adee58d508cfa907162d1192a25dc21b9}{render}} ()=0
+\item 
+void \mbox{\hyperlink{class_game_object_a514b9b67d7173aba4ed28ddc3e38fd5f}{add\+Parts}} (glt\+::\+Render\+\_\+\+Node \&\+\_\+graphics\+Model, \mbox{\hyperlink{class_physics_world}{Physics\+World}} \&\+\_\+world)
+\item 
+\mbox{\hyperlink{struct_game_object_1_1_parts}{Parts}} \& \mbox{\hyperlink{class_game_object_a918e94af30ef96eb8a602cf8b0453758}{get\+Parts}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{class_game_object_a18120b85704277a48ab064138b44e9eb}{add\+Joints\+To\+Physics}} (\mbox{\hyperlink{class_physics_world}{Physics\+World}} \&\+\_\+world)
+\item 
+\mbox{\hyperlink{class_scene}{Scene}} \& \mbox{\hyperlink{class_game_object_aed20b05219d7b5467dd1978d22fc3361}{get\+Scene}} ()
+\item 
+bt\+Vector3 \mbox{\hyperlink{class_game_object_a2f7657dbdbe8be16d9ed9c4a4c1c2ef1}{Forward}} (const std\+::string \&name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene}{Scene}} \& \mbox{\hyperlink{class_game_object_aeea61de934e13603696b4ed00e9fe42e}{scene}}
+\item 
+map$<$ std\+::string, \mbox{\hyperlink{struct_game_object_1_1_parts}{Parts}} $>$ \mbox{\hyperlink{class_game_object_a793b910e9851728a522aba85fe7b829e}{parts}}
+\item 
+map$<$ string, shared\+\_\+ptr$<$ bt\+Hinge\+Constraint $>$ $>$ \mbox{\hyperlink{class_game_object_ab6ea7ad55d467cc31cd6addf2465f40c}{constrains}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_object_ab2c6683579548906dc8432bbd823fd76}\label{class_game_object_ab2c6683579548906dc8432bbd823fd76}} 
+\index{Game\+Object@{Game\+Object}!Game\+Object@{Game\+Object}}
+\index{Game\+Object@{Game\+Object}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Game\+Object()}{GameObject()}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_object_ac4d09cf168b9ad3e5ba0c31fb7872c76}\label{class_game_object_ac4d09cf168b9ad3e5ba0c31fb7872c76}} 
+\index{Game\+Object@{Game\+Object}!add\+Joints@{add\+Joints}}
+\index{add\+Joints@{add\+Joints}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{add\+Joints()}{addJoints()}}
+{\footnotesize\ttfamily void Game\+Object\+::add\+Joints (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_rigidbody}{Rigidbody}} $>$ \&}]{rgA,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_rigidbody}{Rigidbody}} $>$ \&}]{rgB,  }\item[{bt\+Vector3 \&}]{pivotA,  }\item[{bt\+Vector3 \&}]{pivotB,  }\item[{bt\+Vector3 \&}]{axisA,  }\item[{bt\+Vector3 \&}]{axisB }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_object_a18120b85704277a48ab064138b44e9eb}\label{class_game_object_a18120b85704277a48ab064138b44e9eb}} 
+\index{Game\+Object@{Game\+Object}!add\+Joints\+To\+Physics@{add\+Joints\+To\+Physics}}
+\index{add\+Joints\+To\+Physics@{add\+Joints\+To\+Physics}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{add\+Joints\+To\+Physics()}{addJointsToPhysics()}}
+{\footnotesize\ttfamily void Game\+Object\+::add\+Joints\+To\+Physics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_world}{Physics\+World}} \&}]{\+\_\+world }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_object_a35111561ee0a5dcbd260ae282fbee715}\label{class_game_object_a35111561ee0a5dcbd260ae282fbee715}} 
+\index{Game\+Object@{Game\+Object}!add\+Model\+And\+Physics@{add\+Model\+And\+Physics}}
+\index{add\+Model\+And\+Physics@{add\+Model\+And\+Physics}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{add\+Model\+And\+Physics()}{addModelAndPhysics()}}
+{\footnotesize\ttfamily void Game\+Object\+::add\+Model\+And\+Physics (\begin{DoxyParamCaption}\item[{const string \&}]{model\+\_\+obj\+\_\+path,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_rigidbody}{Rigidbody}} $>$ \&}]{rigid\+Body,  }\item[{float}]{physics\+To\+Graphics\+Scale,  }\item[{string}]{name\+Part }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_object_a514b9b67d7173aba4ed28ddc3e38fd5f}\label{class_game_object_a514b9b67d7173aba4ed28ddc3e38fd5f}} 
+\index{Game\+Object@{Game\+Object}!add\+Parts@{add\+Parts}}
+\index{add\+Parts@{add\+Parts}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{add\+Parts()}{addParts()}}
+{\footnotesize\ttfamily void Game\+Object\+::add\+Parts (\begin{DoxyParamCaption}\item[{glt\+::\+Render\+\_\+\+Node \&}]{\+\_\+graphics\+Model,  }\item[{\mbox{\hyperlink{class_physics_world}{Physics\+World}} \&}]{\+\_\+world }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_object_a2f7657dbdbe8be16d9ed9c4a4c1c2ef1}\label{class_game_object_a2f7657dbdbe8be16d9ed9c4a4c1c2ef1}} 
+\index{Game\+Object@{Game\+Object}!Forward@{Forward}}
+\index{Forward@{Forward}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Forward()}{Forward()}}
+{\footnotesize\ttfamily bt\+Vector3 Game\+Object\+::\+Forward (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_object_a918e94af30ef96eb8a602cf8b0453758}\label{class_game_object_a918e94af30ef96eb8a602cf8b0453758}} 
+\index{Game\+Object@{Game\+Object}!get\+Parts@{get\+Parts}}
+\index{get\+Parts@{get\+Parts}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{get\+Parts()}{getParts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_game_object_1_1_parts}{Parts}}\& Game\+Object\+::get\+Parts (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_aed20b05219d7b5467dd1978d22fc3361}\label{class_game_object_aed20b05219d7b5467dd1978d22fc3361}} 
+\index{Game\+Object@{Game\+Object}!get\+Scene@{get\+Scene}}
+\index{get\+Scene@{get\+Scene}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{get\+Scene()}{getScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene}{Scene}}\& Game\+Object\+::get\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_adee58d508cfa907162d1192a25dc21b9}\label{class_game_object_adee58d508cfa907162d1192a25dc21b9}} 
+\index{Game\+Object@{Game\+Object}!render@{render}}
+\index{render@{render}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily virtual void Game\+Object\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_tank_a9628f999ddc963311cebf069da363d5c}{Tank}}, \mbox{\hyperlink{class_bullet_a4b58c9ddf90ecd78b2e5b292c7496850}{Bullet}}, \mbox{\hyperlink{class_key_ad7047dce6eba1702bf776cb6ffeab3a6}{Key}}, \mbox{\hyperlink{class_platform_move_ac8e703c3529c602c9f0cc0a4148bcc34}{Platform\+Move}}, \mbox{\hyperlink{class_targets_ae4f6dccb119a885728dc9e9c3e287c95}{Targets}}, \mbox{\hyperlink{class_wall_ad2b19eb994789ac7588b61a7ad0d928f}{Wall}}, and \mbox{\hyperlink{class_floor_a243d39104b6aacb662481be4fda2d72e}{Floor}}.
+
+\mbox{\Hypertarget{class_game_object_adad7d284b670db722a2fda8e6a7997e3}\label{class_game_object_adad7d284b670db722a2fda8e6a7997e3}} 
+\index{Game\+Object@{Game\+Object}!update@{update}}
+\index{update@{update}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+Object\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_object_ab6ea7ad55d467cc31cd6addf2465f40c}\label{class_game_object_ab6ea7ad55d467cc31cd6addf2465f40c}} 
+\index{Game\+Object@{Game\+Object}!constrains@{constrains}}
+\index{constrains@{constrains}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{constrains}{constrains}}
+{\footnotesize\ttfamily map$<$ string, shared\+\_\+ptr$<$bt\+Hinge\+Constraint$>$ $>$ Game\+Object\+::constrains\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_object_a793b910e9851728a522aba85fe7b829e}\label{class_game_object_a793b910e9851728a522aba85fe7b829e}} 
+\index{Game\+Object@{Game\+Object}!parts@{parts}}
+\index{parts@{parts}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{parts}{parts}}
+{\footnotesize\ttfamily map$<$ std\+::string, \mbox{\hyperlink{struct_game_object_1_1_parts}{Parts}} $>$ Game\+Object\+::parts\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_object_aeea61de934e13603696b4ed00e9fe42e}\label{class_game_object_aeea61de934e13603696b4ed00e9fe42e}} 
+\index{Game\+Object@{Game\+Object}!scene@{scene}}
+\index{scene@{scene}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{scene}{scene}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene}{Scene}}\& Game\+Object\+::scene\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+3d/1 rigid bodies/code/\+Headers/\mbox{\hyperlink{_game_object_8hpp}{Game\+Object.\+hpp}}\end{DoxyCompactItemize}

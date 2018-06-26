@@ -1,0 +1,114 @@
+\hypertarget{class_rigidbody}{}\section{Rigidbody Class Reference}
+\label{class_rigidbody}\index{Rigidbody@{Rigidbody}}
+
+
+{\ttfamily \#include $<$Rigidbody.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rigidbody_a583313febf979a0e72cbc59a5fcc2ab4}{Rigidbody}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_shape}{Shape}} $>$ \&\mbox{\hyperlink{class_rigidbody_a817fb8d0991858bd31bdaf8f60df1346}{shape}}, float X, float Y, float Z, bool is\+Static, float mass, float rotateX, float rotateY, float rotateZ)
+\item 
+virtual \mbox{\hyperlink{class_rigidbody_aeacb70ba57d80c85cfb6f5f50ebecf96}{$\sim$\+Rigidbody}} ()=default
+\item 
+bt\+Rigid\+Body $\ast$ \mbox{\hyperlink{class_rigidbody_a189022541bfdf0717639e681934f996d}{get}} ()
+\item 
+bt\+Transform \mbox{\hyperlink{class_rigidbody_a4e63ac1ae27de4b0c84e6a3956fc0edd}{get\+Transform}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+shared\+\_\+ptr$<$ bt\+Rigid\+Body $>$ \mbox{\hyperlink{class_rigidbody_adc3e81959384b3b97c786805592a36c3}{body}}
+\item 
+shared\+\_\+ptr$<$ bt\+Default\+Motion\+State $>$ \mbox{\hyperlink{class_rigidbody_a532632942cea50d9f5eb89da3f017777}{state}}
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_shape}{Shape}} $>$ \mbox{\hyperlink{class_rigidbody_a817fb8d0991858bd31bdaf8f60df1346}{shape}}
+\item 
+float \mbox{\hyperlink{class_rigidbody_abe7f1cec1c81ff1c0544cdb49ca8cded}{coordX}}
+\item 
+float \mbox{\hyperlink{class_rigidbody_a6bb882de91a461cc33c7212f53ec0289}{coordY}}
+\item 
+float \mbox{\hyperlink{class_rigidbody_a7bac1a0470551f7fec7884b68742a8f3}{coordZ}}
+\item 
+bt\+Transform \mbox{\hyperlink{class_rigidbody_acb3059a56e65ec7e6a8e59462c6023e4}{transform}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rigidbody_a583313febf979a0e72cbc59a5fcc2ab4}\label{class_rigidbody_a583313febf979a0e72cbc59a5fcc2ab4}} 
+\index{Rigidbody@{Rigidbody}!Rigidbody@{Rigidbody}}
+\index{Rigidbody@{Rigidbody}!Rigidbody@{Rigidbody}}
+\subsubsection{\texorpdfstring{Rigidbody()}{Rigidbody()}}
+{\footnotesize\ttfamily Rigidbody\+::\+Rigidbody (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_shape}{Shape}} $>$ \&}]{shape,  }\item[{float}]{X,  }\item[{float}]{Y,  }\item[{float}]{Z,  }\item[{bool}]{is\+Static,  }\item[{float}]{mass,  }\item[{float}]{rotateX,  }\item[{float}]{rotateY,  }\item[{float}]{rotateZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_rigidbody_aeacb70ba57d80c85cfb6f5f50ebecf96}\label{class_rigidbody_aeacb70ba57d80c85cfb6f5f50ebecf96}} 
+\index{Rigidbody@{Rigidbody}!````~Rigidbody@{$\sim$\+Rigidbody}}
+\index{````~Rigidbody@{$\sim$\+Rigidbody}!Rigidbody@{Rigidbody}}
+\subsubsection{\texorpdfstring{$\sim$\+Rigidbody()}{~Rigidbody()}}
+{\footnotesize\ttfamily virtual Rigidbody\+::$\sim$\+Rigidbody (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rigidbody_a189022541bfdf0717639e681934f996d}\label{class_rigidbody_a189022541bfdf0717639e681934f996d}} 
+\index{Rigidbody@{Rigidbody}!get@{get}}
+\index{get@{get}!Rigidbody@{Rigidbody}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily bt\+Rigid\+Body$\ast$ Rigidbody\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigidbody_a4e63ac1ae27de4b0c84e6a3956fc0edd}\label{class_rigidbody_a4e63ac1ae27de4b0c84e6a3956fc0edd}} 
+\index{Rigidbody@{Rigidbody}!get\+Transform@{get\+Transform}}
+\index{get\+Transform@{get\+Transform}!Rigidbody@{Rigidbody}}
+\subsubsection{\texorpdfstring{get\+Transform()}{getTransform()}}
+{\footnotesize\ttfamily bt\+Transform Rigidbody\+::get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_rigidbody_adc3e81959384b3b97c786805592a36c3}\label{class_rigidbody_adc3e81959384b3b97c786805592a36c3}} 
+\index{Rigidbody@{Rigidbody}!body@{body}}
+\index{body@{body}!Rigidbody@{Rigidbody}}
+\subsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ bt\+Rigid\+Body $>$ Rigidbody\+::body\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_rigidbody_abe7f1cec1c81ff1c0544cdb49ca8cded}\label{class_rigidbody_abe7f1cec1c81ff1c0544cdb49ca8cded}} 
+\index{Rigidbody@{Rigidbody}!coordX@{coordX}}
+\index{coordX@{coordX}!Rigidbody@{Rigidbody}}
+\subsubsection{\texorpdfstring{coordX}{coordX}}
+{\footnotesize\ttfamily float Rigidbody\+::coordX\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_rigidbody_a6bb882de91a461cc33c7212f53ec0289}\label{class_rigidbody_a6bb882de91a461cc33c7212f53ec0289}} 
+\index{Rigidbody@{Rigidbody}!coordY@{coordY}}
+\index{coordY@{coordY}!Rigidbody@{Rigidbody}}
+\subsubsection{\texorpdfstring{coordY}{coordY}}
+{\footnotesize\ttfamily float Rigidbody\+::coordY\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_rigidbody_a7bac1a0470551f7fec7884b68742a8f3}\label{class_rigidbody_a7bac1a0470551f7fec7884b68742a8f3}} 
+\index{Rigidbody@{Rigidbody}!coordZ@{coordZ}}
+\index{coordZ@{coordZ}!Rigidbody@{Rigidbody}}
+\subsubsection{\texorpdfstring{coordZ}{coordZ}}
+{\footnotesize\ttfamily float Rigidbody\+::coordZ\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_rigidbody_a817fb8d0991858bd31bdaf8f60df1346}\label{class_rigidbody_a817fb8d0991858bd31bdaf8f60df1346}} 
+\index{Rigidbody@{Rigidbody}!shape@{shape}}
+\index{shape@{shape}!Rigidbody@{Rigidbody}}
+\subsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_shape}{Shape}} $>$ Rigidbody\+::shape\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_rigidbody_a532632942cea50d9f5eb89da3f017777}\label{class_rigidbody_a532632942cea50d9f5eb89da3f017777}} 
+\index{Rigidbody@{Rigidbody}!state@{state}}
+\index{state@{state}!Rigidbody@{Rigidbody}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ bt\+Default\+Motion\+State $>$ Rigidbody\+::state\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_rigidbody_acb3059a56e65ec7e6a8e59462c6023e4}\label{class_rigidbody_acb3059a56e65ec7e6a8e59462c6023e4}} 
+\index{Rigidbody@{Rigidbody}!transform@{transform}}
+\index{transform@{transform}!Rigidbody@{Rigidbody}}
+\subsubsection{\texorpdfstring{transform}{transform}}
+{\footnotesize\ttfamily bt\+Transform Rigidbody\+::transform\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+3d/1 rigid bodies/code/\+Headers/\mbox{\hyperlink{_rigidbody_8hpp}{Rigidbody.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{class_scene}{}\section{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+
+
+{\ttfamily \#include $<$Scene.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_ad10176d75a9cc0da56626f682d083507}{Scene}} ()
+\item 
+\mbox{\hyperlink{class_scene_a3b8cec2e32546713915f8c6303c951f1}{$\sim$\+Scene}} ()
+\item 
+void \mbox{\hyperlink{class_scene_a3aeff0df4ebdc17207c48a76ed3ccfa6}{add\+Game\+Object}} (string name, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_object}{Game\+Object}} $>$ \&game\+Object)
+\item 
+void \mbox{\hyperlink{class_scene_a846a5af36bafc63922980b72cd6abf96}{update}} (float time)
+\item 
+void \mbox{\hyperlink{class_scene_aca095a03977e82f8c5a76cf4d3752c96}{reset\+Ph\+World}} ()
+\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ \mbox{\hyperlink{class_scene_ab16e3d00711a57b59a0e05e0ed76b671}{get\+Game\+Object}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{class_scene_a4ddf2d16f371ee9533b3faf1dd5ddfb1}{render}} ()
+\item 
+void \mbox{\hyperlink{class_scene_a9f729eae7d79fb819e046fbf6f2528e8}{instantiate\+Bullet}} (int \+\_\+count, bt\+Vector3 \&\+\_\+vector)
+\item 
+void \mbox{\hyperlink{class_scene_ac3864628aa57cecf65809bfdd00e4b6d}{add\+Platform}} ()
+\item 
+void \mbox{\hyperlink{class_scene_ad02fae80f6ee49025fa6ff7e68c96081}{reset\+\_\+viewport}} (const sf\+::\+Window \&window)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_ad10176d75a9cc0da56626f682d083507}\label{class_scene_ad10176d75a9cc0da56626f682d083507}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scene_a3b8cec2e32546713915f8c6303c951f1}\label{class_scene_a3b8cec2e32546713915f8c6303c951f1}} 
+\index{Scene@{Scene}!````~Scene@{$\sim$\+Scene}}
+\index{````~Scene@{$\sim$\+Scene}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{$\sim$\+Scene()}{~Scene()}}
+{\footnotesize\ttfamily Scene\+::$\sim$\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_a3aeff0df4ebdc17207c48a76ed3ccfa6}\label{class_scene_a3aeff0df4ebdc17207c48a76ed3ccfa6}} 
+\index{Scene@{Scene}!add\+Game\+Object@{add\+Game\+Object}}
+\index{add\+Game\+Object@{add\+Game\+Object}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{add\+Game\+Object()}{addGameObject()}}
+{\footnotesize\ttfamily void Scene\+::add\+Game\+Object (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_object}{Game\+Object}} $>$ \&}]{game\+Object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scene_ac3864628aa57cecf65809bfdd00e4b6d}\label{class_scene_ac3864628aa57cecf65809bfdd00e4b6d}} 
+\index{Scene@{Scene}!add\+Platform@{add\+Platform}}
+\index{add\+Platform@{add\+Platform}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{add\+Platform()}{addPlatform()}}
+{\footnotesize\ttfamily void Scene\+::add\+Platform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_ab16e3d00711a57b59a0e05e0ed76b671}\label{class_scene_ab16e3d00711a57b59a0e05e0ed76b671}} 
+\index{Scene@{Scene}!get\+Game\+Object@{get\+Game\+Object}}
+\index{get\+Game\+Object@{get\+Game\+Object}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{get\+Game\+Object()}{getGameObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object}{Game\+Object}}$\ast$ Scene\+::get\+Game\+Object (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scene_a9f729eae7d79fb819e046fbf6f2528e8}\label{class_scene_a9f729eae7d79fb819e046fbf6f2528e8}} 
+\index{Scene@{Scene}!instantiate\+Bullet@{instantiate\+Bullet}}
+\index{instantiate\+Bullet@{instantiate\+Bullet}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{instantiate\+Bullet()}{instantiateBullet()}}
+{\footnotesize\ttfamily void Scene\+::instantiate\+Bullet (\begin{DoxyParamCaption}\item[{int}]{\+\_\+count,  }\item[{bt\+Vector3 \&}]{\+\_\+vector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scene_a4ddf2d16f371ee9533b3faf1dd5ddfb1}\label{class_scene_a4ddf2d16f371ee9533b3faf1dd5ddfb1}} 
+\index{Scene@{Scene}!render@{render}}
+\index{render@{render}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Scene\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_ad02fae80f6ee49025fa6ff7e68c96081}\label{class_scene_ad02fae80f6ee49025fa6ff7e68c96081}} 
+\index{Scene@{Scene}!reset\+\_\+viewport@{reset\+\_\+viewport}}
+\index{reset\+\_\+viewport@{reset\+\_\+viewport}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{reset\+\_\+viewport()}{reset\_viewport()}}
+{\footnotesize\ttfamily void Scene\+::reset\+\_\+viewport (\begin{DoxyParamCaption}\item[{const sf\+::\+Window \&}]{window }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scene_aca095a03977e82f8c5a76cf4d3752c96}\label{class_scene_aca095a03977e82f8c5a76cf4d3752c96}} 
+\index{Scene@{Scene}!reset\+Ph\+World@{reset\+Ph\+World}}
+\index{reset\+Ph\+World@{reset\+Ph\+World}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{reset\+Ph\+World()}{resetPhWorld()}}
+{\footnotesize\ttfamily void Scene\+::reset\+Ph\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_a846a5af36bafc63922980b72cd6abf96}\label{class_scene_a846a5af36bafc63922980b72cd6abf96}} 
+\index{Scene@{Scene}!update@{update}}
+\index{update@{update}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Scene\+::update (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+3d/1 rigid bodies/code/\+Headers/\mbox{\hyperlink{_scene_8hpp}{Scene.\+hpp}}\end{DoxyCompactItemize}
